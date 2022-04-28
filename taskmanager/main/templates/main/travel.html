@@ -1,0 +1,89 @@
+{% extends   'main/base.html' %}
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main/css/travel.css' %}">
+{% endblock %}
+{% block title %}
+Страница про travel
+{% endblock %}
+{% block content %}
+
+        <div class="container" id="container">
+            <div class="box1">
+                <p class="welc" style="font-size: 20px; color: rgba(255, 90, 90);">
+                    Welcoming <br> Kazakhstan
+                </p>
+                <img src="{% static 'main/img/mapkz.png' %}" alt="" width="190px" height="70px">
+            </div>
+            <div class="box2">
+                <form>
+                    <p><input type="search" placeholder="Поиск по сайту">
+                    <input type="submit" value="найти"></p>
+                </form>
+            </div>
+        </div>
+        <div class="header">
+            <ul>
+                <li><div><a href="">Home</a></div></li>
+                <li style="list-style: none;"><a href="">First</a></li>
+                <li><a href="">Second</a></li>
+                <li><a href="">Third</a></li>
+                <li><a href="">Fourst</a></li>
+
+            </ul>
+
+        </div>
+        <div class="cotn">
+            <p class="share" style="text-align: center;">Share your thoughts about Kazakhstan</p>
+
+        </div>
+        <div class="container2">
+            <video autoplay muted loop playsinline >
+                <source src="{% static 'main/img/videokz.mp4' %}">
+            </video>
+        </div>
+        <a name="tury"></a>
+        <div class="tury">
+            <p class="tr">Tours from travel agency</p>
+        </div>
+        <div class="tur">
+            <div class="tur1">
+                <img src="{% static 'main/img/kolsay.jpg' %}" alt="" width="331px" height="187">
+                <p class="trip">Join the Welcoming Network</p>
+                <p class="tripp">
+                    The Kolsai Lakes Reserve was open to visitors a few years ago, so nature has preserved its unknown and original novelty.
+                    The land is ecologically clean and rich in wild plants, most of which are medicinal.
+                    Rare native plants include: apricot, Ili barberry, hawthorn, iris Alberta.
+                </p>
+            </div>
+            <div class="tur2">
+                <img src="{% static 'main/img/bozz2.jpg' %}" alt="" width="331px" height="187">
+                <p class="trip">Participate in Welcoming week</p>
+                    <p class="tripp">
+                        This part of the plateau consists of desert landscapes made of limestone, up to 250 meters high.
+                        In this area, you can find fossilized shells, sea urchins, belemnits, and even the teeth of a shark that lived in the Tethys Ocean in the Mesozoic era.
+                    </p>
+            </div>
+            <div class="tur3">
+                <img src="{% static 'main/img/Sharyn shatkaly.jpg' %}" alt="" width="331px" height="187">
+                <p class="trip">Support our mission</p>
+                    <p class="tripp">
+                        The gorge stretches 154 km from northeast to southwest along the Charyn River. The relief of this region is different.
+                        Many rivers of the Charyn River, which originate on the northern slopes of the Teriskey and Kungei Alatau ridges, join to form a large river, forming a huge gorge that runs through the Zhalanash Depression and the eastern part of the Toraigyr Mountains.
+                    </p>
+            </div>
+        </div>
+        <div class="buttt">
+            <button type="button" class="btn btn-outline-dark">Сhoice</button>
+
+        </div>
+
+        <div class="end">
+            <p class="abo">About Kazakhstan</p>
+            <p  class="zero" style="font-size: 20px;">
+                Tourism is one of the most underdeveloped industries in the world.
+                There are countries in the world that develop only in the field of tourism and form a rich domestic and foreign economy.
+                In particular, the countries of Europe, South America, East Asia and the Mediterranean, bordering the oceans.
+            </p>
+        </div>
+{% endblock %}

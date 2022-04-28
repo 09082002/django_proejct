@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Новости на сайте {% endblock %}
+
+{% block content %}
+
+
+<div class="features">
+    <h1>Мақаланы енгізу</h1>
+    <form method="post" >
+        {% csrf_token %}
+        {{ form.title }}<br>
+        {{ form.news }}<br>
+        {{ form.author }}<br>
+        <span>{{ error }}</span>
+        <button type="submit" class="btn btn-success">Қосу</button>
+    </form>
+</div>
+
+{% endblock %}

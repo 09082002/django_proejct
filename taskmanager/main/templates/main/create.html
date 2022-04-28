@@ -1,0 +1,55 @@
+{% extends   'main/base.html' %}
+
+{% block title %}
+Страница про create
+{% endblock %}
+
+{% block content %}
+
+<div class="features">
+    <h1>Мақала енгізу</h1>
+    <form method="post" >
+        {% csrf_token %}
+        <div>
+            <div class="div">
+                {{ form.name }}<br>
+                {{ form.news }}<br>
+                {{ form.author }}<br>
+                {{ form.password }}<br>
+            </div>
+        </div>
+
+
+        <span>{{ error }}</span>
+        <button type="submit" class="btn btn-success">Қосу</button>
+    </form>
+</div>
+
+
+<!--<div class="features">-->
+<!--    <h1 class="h1">Forma add</h1>-->
+<!--    <form method = "post">-->
+<!--        {% csrf_token %}-->
+<!--        {{ form.name }}<br>-->
+<!--        {{ form.full_text }}<br>-->
+<!--        {{ form.date }}<br>-->
+<!--        <span>{{ error }}</span>-->
+<!--            <button class="btn btn-success " id="b1" type="submit">Add status</button>-->
+
+<!--    </form>-->
+<!--</div>-->
+<style>
+#b1{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+form{
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}
+</style>
+
+{% endblock %}

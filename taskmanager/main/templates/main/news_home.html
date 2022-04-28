@@ -1,0 +1,32 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Новости на сайте {% endblock %}
+
+{% block content %}
+    {% for el in news %}
+        <div  class="p-3= mb-2 bg-secondary text-white text-center b1">
+                 <div class="df">
+                     <div class="div">
+                         <br> <h3>{{ el.name }}</h3> <br>
+                        <p>{{ el.news }}</p><br>
+                         <p> {{el.author}}</p>
+                     </div>
+                     <div class="div1">
+
+                     </div>
+                 </div>
+            <img src="card-img-top" alt="">
+            <a href="{% url 'news-detail' el.id %}"><button class="btn btn-warning">Мақаланы өзгерту</button></a><br><br>
+        </div>
+    {% endfor %}
+
+<style>
+
+    .b1{
+        width: 1100px;
+        margin-left: 90px;
+
+    }
+
+</style>
+{% endblock %}

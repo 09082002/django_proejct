@@ -1,0 +1,18 @@
+{% extends   'main/base.html' %}
+{% block title %}
+Personal information
+{% endblock %}
+{% block content %}
+
+<table>
+        {% for i in info %}
+    <tr>
+        <th>
+            {{ i }}<br><br>
+
+        </th>
+    </tr>
+        {% endfor %}
+</table>
+
+{% endblock %}

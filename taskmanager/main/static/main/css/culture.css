@@ -1,0 +1,42 @@
+#h1 {
+    color: #555;
+    font-weight: 700px;
+    font-size: 28px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bal {
+    margin-left: 40px;
+    width: 1000px;
+    display: flex;
+    margin-top: 100px;
+}
+
+.info {
+    margin-left: 50px;
+}
+
+.h2 {
+    color: #555;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.s {
+    display: flex;
+}
+
+.p {
+    font-size: 18px;
+}
+
+.p1 {
+    margin-left: 10px;
+}

@@ -1,0 +1,28 @@
+{% extends   'main/base.html' %}
+
+{% block title %}
+Delete of status
+{% endblock %}
+
+{% block content %}
+
+<div class="features">
+    <h1 class="h1">Мақаланы жою</h1>
+    <form method = "post">
+        {% csrf_token %}
+        <button class="btn btn-success " id="b1" type="submit">Өшіру</button>
+    </form>
+</div>
+<style>
+    h1{
+    font-family: "Ubuntu", sans-serif;
+    }
+    .features{
+    text-align: center;
+    }
+    button{
+    margin-top: 30px;
+    }
+</style>
+
+{% endblock %}

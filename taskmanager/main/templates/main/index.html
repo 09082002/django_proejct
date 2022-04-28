@@ -1,0 +1,169 @@
+{% extends  'main/base.html' %}
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main/css/index.css' %}">
+
+{% endblock %}
+{% block title %}
+Страница про index
+{% endblock %}
+{% block content %}
+
+<div>
+     <div class="box" style="width: 100%">
+         <img src="{% static 'main/img/NLM_White.png' %}" alt="" width="381px" height="100px">
+    </div>
+            <div class="box2">
+                <ul class="ulll">
+                    <li>Products and Service</li>
+                    <li>Resources</li>
+                    <li>Explore</li>
+                    <li>Grants and Funds</li>
+
+                </ul>
+            </div>
+            <div class="cons">
+                <div class="box3">
+                    <img src="{% static 'main/img/covid.jpg' %}" alt="">
+                </div>
+                <div class="con">
+                    <p class="covid">COVID-19 Information</p>
+                    <p class="info">
+                        Get the latest public health information from CDC
+                        <br> Get the latest research information from NIH | Español
+                        <br> Learn more about COVID-19 and you from HHS
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="{% static 'main/img/q1.jpg' %}" alt="" width="100%" height="400px">
+            </div>
+            <div class="container2">
+                <div class="header">
+                    <p style="font-size: 24px;"> Coronavirus Disease 2019</p>
+                </div>
+                <div class="corv">
+                    <div class="header2">
+                        <img src="{% static 'main/img/coronavirus.jpg' %}" alt="" width="410px" height="350px">
+                    </div>
+                    <div class="corona">
+                        <p class="news" style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">In the News</p>
+                        <ul class="ul2">
+                            <li>Four new options to simplify your SARS-CoV-2 submissions - NCBI Insights</li>
+                            <li>COVID-19 Web Collecting: Reflections At One Year - Circulating Now</li>
+                            <li>One Year of Rapid Acceleration of Diagnostics, and Anticipating New Challenges - Musings from the Mezzanine</li>
+                        </ul>
+                        <p class="ADD" style="font-size: 20px;">
+                            Additional NLM Resources
+                        </p>
+                        <ul class="ul3">
+                            <li>Clinical studies related to the coronavirus disease</li>
+                            <li>LitCovid - a curated literature hub for tracking up-to-date scientific information about the 2019 novel Coronavirus</li>
+                            <li>Find the latest journal article citations (PubMed)</li>
+                            <li>Search the text mining collections (PubMed Central)</li>
+                        </ul>
+                    </div>
+                </div>
+                        <style>
+                            .p1{
+                            font-size:24px;
+                            font-family: Arial, Helvetica, sans-serif;
+                            }
+                        </style>
+                    <div class="row row-cols-3">
+                        {% for med1 in medtit %}
+                        <div class="col">
+                            <img src="{% static 'main/img/1.png' %}" alt="" width="300px" height="213px">
+                                <p class="p1">{{med1.title}}</p>
+                                <p>{{med1.information}}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                <div class="row row-cols-3">
+                    <div class="col">
+                        <img src="{% static 'main/img/4.png' %}" alt="" width="300px" height="213px">
+                        <p class="dary">Agromycin 20</p>
+                        <p class="bor">Broad Spectrum Antibiotic</p>
+
+
+                    </div>
+                    <div class="col">
+                        <img src="{% static 'main/img/5.png' %}" alt="" width="315px" height="213px">
+                        <p class="dary">Agrosona 11</p>
+                        <p class="bor">Anti-inflamatory-antibiotic Combination</p>
+
+                    </div>
+                    <div class="col">
+                        <img src="{% static 'main/img/6.png' %}" alt="" width="315px" height="213px">
+                        <p class="dary">Amoxi Tabs C-250</p>
+                        <p class="bor">Broad spectrum antibiotic with bacterial resistance inhibitor</p>
+                    </div>
+                </div>
+                <table class="table">
+                  <tr>
+                    <th>Diseases of the circulatory system</th>
+                    <td>Patients after coronary artery bypass grafting, coronary artery bypass grafting, myocardial infarction, angina pectoris III-IV FC</td>
+                    <td>
+                        Clopidogrel, tablets
+                        <br> Acetylsalicylic acid, tablets
+                        <br> Isosorbide dinitrate, spray, tablets
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Arterial hypertension</th>
+                    <td>2-4 degree of danger; symptomatic arterial hypertension in chronic kidney disease</td>
+                    <td>
+                        Indapamide, tablets, capsules
+                        <br>Bisoprolol, tablets
+                        <br>Metoprolol, tablets
+                        <br>Amlodipine, tablets
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Arrhythmia</th>
+                    <td>Supracardiac fibrillation (paroxysmal, persistent, persistent), including after radiofrequency ablation (RFR)</td>
+                    <td>
+                        Warfarin, tablets
+                        <br>Digoxin, tablets
+                        <br>Propafenone, tablets
+
+                    </td>
+                  </tr>
+                  <tr>
+                      <th>Gastric or peptic ulcer</th>
+                      <td>In the complication phase. Antibacterial drugs are prescribed when H. pylori is detected</td>
+                      <td>
+                        Omeprazole, capsules
+                        <br>Bismuth tricalia dicitrate, tablets
+                        <br>Clarithromycin, tablets
+                      </td>
+                  </tr>
+                </table>
+                <div class="end">
+                    <div class="ends">
+                        <p class="endd">Connect with NLM</p>
+                        <p class="endd">National Library of Medicine</p>
+                        <p class="endd">Web Policies</p>
+                        <p class="endd">NLM Support Center
+                                     <br> Accessibility
+                                    <br> Careers</p>
+                    </div>
+                </div>
+            </div>
+<!--        <div class="p-3 mb-2 text-center m1 ">-->
+<!--            {% for med1 in medtit %}-->
+<!--            <p>{{med1.title}}</p>-->
+<!--            <p>{{med1.information}}</p>-->
+<!--            {% endfor %}-->
+<!--        </div>-->
+
+</div>
+    <style>
+        .m1{
+
+        margin-top:1300px;
+        height:150px;
+        color:black;}
+    </style>
+{% endblock %}

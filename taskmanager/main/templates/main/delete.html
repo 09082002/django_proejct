@@ -1,0 +1,17 @@
+
+{% extends 'main/base.html' %}
+
+{% block title %}Новости на сайте {% endblock %}
+
+{% block content %}
+
+
+<div class="features">
+    <h1 class="h1">Мақаланы жою </h1><br>
+    <form method="post" >
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">жою</button>
+    </form>
+</div>
+
+{% endblock %}

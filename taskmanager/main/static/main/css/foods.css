@@ -1,0 +1,40 @@
+
+.st {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+.kz {
+    width: 700px;
+    margin-left: 100px;
+}
+
+.kz img {
+    margin-left: 150px;
+}
+
+.p {
+    margin-top: 20px;
+}
+
+.end {
+    justify-content: space-around;
+    display: flex;
+    margin-top: 50px;
+    height: 180px;
+    background-color: #444444;
+}
+
+li {
+    list-style: none;
+    color: white;
+}
+
+.start {
+    display: flex;
+}
+
+#a {
+    width: 250px;
+}

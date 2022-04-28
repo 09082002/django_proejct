@@ -1,0 +1,105 @@
+{% extends   'main/base.html' %}
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main/css/about.css' %}">
+{% endblock %}
+{% block title %}
+Страница про about
+{% endblock %}
+{% block content %}
+
+    <div class="tourism">
+        <div class="tour1">
+            <img src="https://qazaqstan3d.kz/upload/thumbed/1120x561/635619_1503865552_1120_561_0.jpg" alt="" width="200px" height="200px">
+            <h2>Heading</h2>
+            <p class="p1">
+            Kolsay Lakes National Park (Kazakh: Көлсай көлдері ұлттық паркі, Kölsai kölderı ūlttyq parkı) is located on the north slope of the Tian Shan Mountains, southeast Kazakhstan (10 km from the border with Kyrgyzstan).
+            </p>
+        </div>
+        <div class="tour2">
+            <img src="https://kaztag.kz/upload/iblock/cab/17.jpg" alt="" width="200px" height="200px">
+            <h2>Heading</h2>
+            <p class="p1">
+            Bozjyra is a magnificent creation of weathering and erosion, located on the territory of the Ustyurt Plateau. Here you can see vast clay deserts, limestone mountains, buttes more than 200 meters (650 ft) high. In the Mesozoic.
+            </p>
+        </div>
+        <div class="tour3">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/42/74/3e/250.jpg?w=500&h=300&s=1g" alt="" width="200px" height="200px">
+            <h2>Heading</h2>
+            <p class="p1">
+            Burabai is the pearl of Kazakhstan. Amazing tour that includes mountains, lakes, cliffs and etc. One of the most beautiful sights of the country. Here, one can get spiritual energy and achieve an accord with the nature.
+            </p>
+        </div>
+    </div>
+
+    <hr>
+    <div class="for">
+        <div class="first">
+            <div class="coz">
+                <h2 class="featurette-heading">First featurette heading.
+                    <span class="text-muted">It blow your mind.
+
+                    </span>
+                </h2>
+                <p class="p">
+                Turkistan is a city and the administrative center of Turkistan Region of Kazakhstan, near the Syr Darya river. It is situated 160 km (100 mi) north-west of Shymkent on the Trans-Aral Railway between Kyzylorda to the north and Tashkent to the south.
+                </p>
+            </div>
+        </div>
+        <div class="imgt">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/%D0%9C%D0%B0%D1%83%D0%B7%D0%BE%D0%BB%D0%B5%D1%98_%D0%A5%D0%BE%D0%B4%D0%B6%D0%B5_%D0%90%D1%85%D0%BC%D0%B5%D0%B4%D0%B0_%D0%88%D0%B0%D1%81%D0%B0%D0%B2%D0%B8%D1%98%D0%B0_%28%D0%B3%D1%80%D0%B0%D0%B4_%D0%A2%D1%83%D1%80%D0%BA%D0%B5%D1%81%D1%82%D0%B0%D0%BD%2C_%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%29.jpg/1280px-%D0%9C%D0%B0%D1%83%D0%B7%D0%BE%D0%BB%D0%B5%D1%98_%D0%A5%D0%BE%D0%B4%D0%B6%D0%B5_%D0%90%D1%85%D0%BC%D0%B5%D0%B4%D0%B0_%D0%88%D0%B0%D1%81%D0%B0%D0%B2%D0%B8%D1%98%D0%B0_%28%D0%B3%D1%80%D0%B0%D0%B4_%D0%A2%D1%83%D1%80%D0%BA%D0%B5%D1%81%D1%82%D0%B0%D0%BD%2C_%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%29.jpg" alt="" width="450px" height="450px">
+        </div>
+    </div>
+
+    <hr id="h">
+    <div class="for">
+        <div class="first">
+            <div class="coz">
+                <h2 class="featurette-heading">First featurette heading.
+                    <span class="text-muted">It blow your mind.
+
+                    </span>
+                </h2>
+                <p class="p">
+                Almaty Kazakh pronunciation, or Alma-Ata, and formerly Verniy, is the largest city in Kazakhstan, with a population of about 2 million.
+                </p>
+            </div>
+        </div>
+        <div class="imgt">
+            <img src="https://traveler.marriott.com/wp-content/uploads/2020/03/GI_1151597278_CharynCanyon.jpg" alt="" width="450px" height="450px">
+        </div>
+    </div>
+
+    <hr class = "h">
+    <div class="for">
+        <div class="first">
+            <div class="coz">
+                <h2 class="featurette-heading">First featurette heading.
+                    <span class="text-muted">It blow your mind.
+
+                    </span>
+                </h2>
+                <p class="p">
+                Kolsay Lakes National Park (Kazakh: Көлсай көлдері ұлттық паркі, Kölsai kölderı ūlttyq parkı) is located on the north slope of the Tian Shan Mountains, southeast Kazakhstan (10 km from the border with Kyrgyzstan).
+                </p>
+            </div>
+        </div>
+        <div class="imgt">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/ff/3d/9b/getlstd-property-photo.jpg?w=500&h=300&s=1" alt="" width="450px" height="450px">
+        </div>
+    </div>
+    <div class="p-3 mb-2 bg-dark text-white text-center m1">
+        {% for el in aboutitle %}
+            <h2>{{el.first_name}}</h2>
+            <p>{{el.last_name}}</p>
+        {% endfor %}
+    </div>
+        <style>
+            .m1{
+            margin-top: 50px;
+            height: 200px;
+            color: white;
+            }
+        </style>
+{% endblock %}
+

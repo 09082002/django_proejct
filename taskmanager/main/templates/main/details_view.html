@@ -1,0 +1,26 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Новости на сайте {% endblock %}
+
+{% block content %}
+
+<div  class="p-3 mb-2 bg-secondary text-white text-center b1">
+    <h3>{{ article.name }}</h3><br><br>
+        <p>{{ article.news }}</p><br>
+        <p>{{ article.author}}</p><br>
+
+    <a href="{% url 'news-update' article.id %} "><button class="btn btn-success">Мақаланы жаңарту</button></a>
+    <a href="{% url 'news-delete' article.id %} "><button class="btn btn-danger">Мақаланы жою</button></a>
+</div>
+<style>
+    .b1{
+        width: 1100px;
+        margin-left: 90px;
+    }
+    button{
+    text-align: center;
+    }
+</style>
+
+
+{% endblock %}
